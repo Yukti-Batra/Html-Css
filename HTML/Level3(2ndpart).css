@@ -1,0 +1,40 @@
+/* z index is a property that tells the stack of the elements
+mtlb overlapping mein konsa element uppar hoga and konsa neeche hoga 
+
+by default sbka z index 0 hota hai
++z index-> mtlb element uppar hoga and -ve mtlb neeche hoga*/
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#box1{
+    background-color:pink;
+    position: absolute;
+    /* toh by default yee krte hi box2 iske neeche chlagya aur usko thoda sa dekhne ke liye ye shifted box1 ko thoda neeche */
+    top: 50px;
+    /* but this is a temporary solution toh box2 ko uppar laane ke liye change z-index of box2 to a greater value */
+    z-index: -1;
+    
+}
+#box2{
+    background-color: lightgreen;
+    z-index: 1;
+    /* ab box2 uppar agya */
+}
+#pic{
+    height: 500px;
+    width: 500px;
+    background-image: url(Butterfly_pic.jpg);
+    /* isse image kheench rahi hai aur poori nhi dikhri so use background-size*/
+    background-size: cover;
+    /* poori given space is covered by image */
+
+    /* background-size: contain; */
+    /* isme photo choti hoke required space mein aana chahti hai isliye kbhi repeat bhi ho jaati hai so use this for it*/
+    /* background-repeat: no-repeat; */
+
+    /* background-size: auto; */
+    /* by default auto hi hota hai jitni agyi voh bs agyi */
+}

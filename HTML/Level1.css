@@ -1,0 +1,50 @@
+p{
+    color: red;
+}
+body{
+    background-color: beige;
+}
+button{
+    color: #ffff00;
+    background-color:rgb(255,176,176);
+    text-transform:capitalize;
+    /* sets each words first letter to be capital */
+}
+#id1{
+    color: chocolate;
+}
+.myclass{
+    color: blueviolet;
+}
+/*COLOUR SYSTEMS:
+RGB :- Red, Green, Blue 
+dark green: (0, 255, 0)
+HEXADECIMAL - 0 to 15 digits (0 to 9, A, B, C, D, E, F)
+0 to ff (rgb)
+#ff0000 ( first two red, next two green, next two blue)
+*/
+
+/* TEXT PROPERTIES */
+
+p{
+    text-align: center;
+    /*text-align parent pe work krta hai */
+    text-decoration: line-through;
+    font-weight: 900;
+    /* 100 to 900 or bold, bolder, light, lighter */
+    
+    line-height: 10px;
+    /* ek individual line kitni height leti hai is line-height */
+
+}
+a{
+    text-decoration: none;
+    /* removes line underneath links */
+    font-family:'Courier New', Courier, monospace;
+
+}
+/* 1 inch = 96px  pixcels */
+#hii{
+    font-size: 30px;
+    text-transform: lowercase;
+}

@@ -1,0 +1,54 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function:steps(5); */
+    /* 5steps mein transition complete hogi */
+    /* ease, ease-in, ease-out,ease-in-out */
+    /* transition-delay: 2s; */
+
+    /* shorthand for all these transitions */
+    transition: all 2s ease-in ;
+    /* time delay ke sath hover mein transform nahi chlra  */
+    /* transition: property duration timing-function delay; */
+}
+
+/* this is called applying a pseudoclass means difining a state of div */
+div:hover{
+    /* background-color: red;
+    color: white;
+    font-size: 20px; */
+    
+    /* transform: scale(2); */
+    /* 2 times width increase krr dena */
+
+    /* transform: translateX(100px);    */
+     /*translate ya translatX or Y kuch bhi*/
+    /* screen pe kisi cheez ko move krwana */
+
+    transform: skew(20deg);
+    /* two sides se pakad ke box ko kheench dena */
+}
+/* active means when we click on it */
+div:active{
+    background-color: green;
+}
+
+/* TRANSFORM- APPLIED IN 2D AND 3D TRANSFORMATIONS TO AN ELEMENT */
+div{
+    transform: rotate(90deg);
+    /* rotate: z 90deg; 90deg work for only z becuase x and y ke about rotate krane pe voh dikhai hi nhi dega
+    180 gehra chlege x,y mein*/
+
+    transform: scale(2,1);
+    /* double of the height of x axis */
+
+    transform: scaleY(2);
+} 

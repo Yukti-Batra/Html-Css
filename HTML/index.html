@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First WebPage</title>
+</head>
+<body>
+    <p><b>bold </b> <i>italic </i> <u>underline </u> <big>big text </big> <small>small text </small> Hello world! <hr> I am Yukti </p>
+    <pre>     same spaces as in code </pre>
+    <br>
+    <h1>hii</h1>
+    <!--shradha didi-->
+    <a href="https://www.google.com/">Google</a>
+
+    <img src="https://jooinn.com/images/beautiful-house-29.jpg" height="200" alt="home">
+
+    <!--Semantic Tags- jinke name se saaf pta lge voh kya hai- header, main, footer -->
+    <header>
+    </header>
+    <main>
+        <section>one </section>
+        <section>two </section>
+        <article>my experience</article>
+            <aside> adds </aside>
+    </main>
+    <footer>contact me </footer>
+    <a href="https://www.google.co.in/" target="_main">Google in new tab</a>
+
+    <!--pictures clickable-->
+    <a href="https://www.google.co.in/"><img src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png" height="200"></a>
+
+    <!-- NON SEMANTIC TAGS : - DIV and SPAN-->
+    <!--DIV - Contains other tags , it is a block element-->
+    <!--BLOCK ELEMENTS - Elements that cover the whole screen even if not required-->
+    <!--INLINE ELMENTS - Take only the required space needed -->
+    <!--SPAN - Container that takes only space it needs, inline elements-->
+    <div>
+        <p>hii</p>
+        <p>AAYO AAYO </p>
+    </div>
+    <div>
+        <p>BYE</p>
+    </div>
+
+    <span>
+        <p>byeee</p>
+    </span>
+
+    <!--Lists-->
+    <ol type="I">
+        <li>apple</li>
+        <li>Mango</li>
+    </ol>
+    <ul type="">
+        <li> banana</li>
+        <li>Litchi</li>
+    </ul>
+
+    <!--TABLES-->
+    <table>
+        <thead>
+        <caption>RESULT</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <!-- <th>Sirname</th> -->
+            <th>Grades</th>
+            <th>PASS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Jatin</td>
+            <td rowspan="2">Arora</td>
+            <td>A+</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <!-- <td>Arora</td> -->
+            <td>F+</td>
+            <td>No</td>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <!--FORMS-->
+    <form action="/action.php">
+        <input type="text" placeholder="Type Something here" >
+        <input type="password" placeholder="password">
+
+        <label for="id1">
+            <!--label se jo text likha hai radio button ke sath uspe click krne pe bhi button tick hojaega-->
+        <input type="radio" value="class 11" name="classes" id="id1">Class 11
+        </label>
+        <input type="radio" value="class 12" name="classes">Class 12
+
+        <!--for mulptiple correct option use a check box-->
+        <label for="id2">
+            <input type="checkbox" value="apple" name="friuts" id="id2">Apple
+        </label>
+        <label for="101">
+            <input type="checkbox" value="mango" name="friuts" id="101">Mango
+        </label>
+
+        <textarea name="feedback" id="102" placeholder="feedback" rows="5">FEEDBACK</textarea>
+        <select name="city">
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">pune</option>
+        </select>
+        <input type="submit" value="submit">
+    </form>
+    <!--iframe tag-->
+    <!--video tag-->
+</body>
+</html>

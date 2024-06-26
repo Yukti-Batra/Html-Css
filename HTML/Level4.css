@@ -1,0 +1,62 @@
+body{
+    text-align: center;
+}
+div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+}
+#container{
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+    /* flex directions are of 4 types :- row(default)(left to right), row-reverse(right to left), col(top to bottom), col-reverse(bottom to top) */
+    flex-direction: row;
+
+    justify-content: space-evenly; /*main axis ke along -horizontally(mostly)*/
+    /* main axis ka start and end it is different than flex-direction, usme sequence bhi badal jaata hai isme bss as shift hue hai boxes*/
+
+    /*values can be can be center,flex-start(default), flex-end.  
+    ADDITIONAL VALUES- space-around, space-between, space-
+    Space-around mein boxes ke baaech mein space aati hai and border aur fisrt and last box  ki space is half of space between boxes,
+    Space-between adds all extra space between boxes no ending space
+    Space-evenly divides even space between all boxes and boxes and border */
+
+    /* flex-wrap:wrap; */
+    align-items: flex-start;  /*cross axis ke along- vertically(mostly)*/
+    /* align-content: center;   works when elements are wrapped, present in multiple lines */
+    
+}
+#box1{
+    background-color: aqua;
+}
+#box2{
+    background-color: chartreuse;
+     align-self: flex-end;  /*high priority than all the other aligns */
+}
+#box3{
+    background-color: lightskyblue;
+    /* flex-grow: 1; jb extra space ho toh nbaaki bachi space isko mill jaegi */
+}
+#box4{
+    background-color: pink;
+     flex-shrink: 3; /*baaki sb se zada shrink */
+}
+#box5{
+    background-color: peru;
+}
+
+@media (min-width: 600px){
+    div{
+        background-color: crimson;
+    }
+    /* we can use width, min-width, max-width
+    min-width: 600 yaa usse zada, max-width: 600 yaa usse km(0 to 600), width: only at 600 pe */
+}
+@media (min-width:50px)and (max-width:100px){
+    div{
+        background-color: darkkhaki;
+    }
+}

@@ -1,0 +1,71 @@
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(229, 236, 32);
+    font-size: 10px;
+}
+#box2{
+    height: 50px;
+    width: 30%;
+    background-color: rgb(36, 207, 73);
+    margin-left: 10%;
+
+    font-size: 2em; /* 2 times of parent's font-size */
+
+    width: 5em; 
+    /* width will be 5 times of the font-size of the element itself */
+
+    /* rem-root em  it means the width will be (5rem jo bola hai)5*16(sbse root element ka font-size like body ka) = 80px */
+    width: 5rem;
+
+    /* vh =1% view port height(height of browser) and vw is 1% of view port width */
+    /* height: 50vh; */
+}
+
+/* position property */
+/* POSITIONS- static, relative, absolute, fixed, sticky */
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    display: inline-block;
+    border: 2px solid black;
+}
+/* properties like top, bottom, right, left and z-index do not work with static position because it means by default position*/
+
+/* #box3{
+     position: static;
+     top: 50px;
+     left: 100px;
+} */
+
+/* but relative position mein yee saari properties work krti hai */
+#box4{
+    position: relative;
+    /* relative to itself */
+    top: 20px;
+    left: 10px;
+}
+/* absolute position is relative to ancestor(any parent) that is not static 
+    abhi parent body tag hai toh browser ke relative hogi */
+#box5{
+    position: absolute;
+    /* yee likhte hi box6 iske neeche chip gaya */
+    top:100px;
+}
+/* fixed position is always related to the browser */
+#box6{
+    position: fixed;
+    /* right left top bottom move krr skte hai */
+    /* navbar ko top se 0px pe fix krte hai using this */
+}
+/* sticky posion is used to stick to a particular  position after the scrool bar reaches that position */
+#box7{
+    height: 200px;
+    width: 200px;
+    background-color: chartreuse;
+    border: 2px solid black;
+    position: sticky;
+    top: 0px;
+    /* mtlb the box will stay its position until the person scrolls and the block reaches the top */
+} 

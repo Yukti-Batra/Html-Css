@@ -1,0 +1,32 @@
+#box1{
+    background-color: blue;
+}
+#box2{
+    background-color: green;
+    visibility: hidden;
+    /* element ki space abhi bhi wahi hai bss dekhega nahi */
+}
+#box3{
+    background-color: red;
+    display: none;
+    /* box gayab aur uski jagah bhi gayab */
+}
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    /* div ek block element tha jisko inline bna rahe hai taaki extra space naa le same line mein aaye */
+    display: inline;
+    /* DrawBack: display inline krne ke baad margin-top aur bottom apply nahi hoti */
+
+    /* for this we use inline-block which is inline but height, width, margin and padding can be set */
+    display: inline-block;
+}
+
+/* ALPHA CHANNEL  (RGBA) */
+/* decides opacity (0 to 1) */
+/* 0- not visible , 1- seen */
+h1{
+    background-color: rgba(0,255,0,0.75);
+}
